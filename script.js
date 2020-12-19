@@ -26,17 +26,19 @@ $("#find-movie").on("click", function(event) {
         console.log(response);
         console.log(response[0].show.name)
 
-        var showInfo = (response[0].show.name)
-        $(".show-name").text(showInfo);
+        $(".show-name").text(response[0].show.name);
 
-        var showInfo = (response[0].show.schedule.days)
-        $(".show-day").text(showInfo);
+        $(".show-day").text(response[0].show.schedule.days);
 
-        var showInfo = (response[0].show.schedule.time)
-        $(".show-time").text(showInfo);
+        $(".show-time").text(response[0].show.schedule.time);
 
-        var showInfo = (response[0].show.network.name)
-        $(".show-network").text(showInfo);
+        if (response[0].show.network === null) {
+            $(".show-status").text("This show is not playing on TV.");
+        } else {
+            $(".show-status").text("This show is playing on TV.");
+            $(".show-network").text(response[0].show.network.name);
+        }
+
     });
 
     var queryURL = "https://www.omdbapi.com/?t=" + showName + "&apikey=trilogy";
@@ -49,11 +51,9 @@ $("#find-movie").on("click", function(event) {
 
         var newImg = $("<img>")
         $(newImg).attr("src", response.Poster);
-        // Appends the image
         $(".show-image").append(newImg);
 
-        var showInfo = (response.Plot)
-        $(".show-summary").text(showInfo);
+        $(".show-summary").text(response.Plot);
     });
 
 });
