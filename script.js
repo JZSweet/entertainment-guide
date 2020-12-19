@@ -11,6 +11,7 @@ $("#find-movie").on("click", function(event) {
     // This line of code will grab the input from the textbox
     var showName = $("#name-input").val().trim();
 
+    // Code for tvmaze
     const settings = {
         "async": true,
         "crossDomain": true,
@@ -22,6 +23,7 @@ $("#find-movie").on("click", function(event) {
         }
     };
 
+    // Ajax for tvmaze
     $.ajax(settings).done(function (response) {
         console.log(response);
         console.log(response[0].show.name)
@@ -41,8 +43,10 @@ $("#find-movie").on("click", function(event) {
 
     });
 
+    // Code for OMDB
     var queryURL = "https://www.omdbapi.com/?t=" + showName + "&apikey=trilogy";
 
+    // Ajax for OMDB
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -55,5 +59,7 @@ $("#find-movie").on("click", function(event) {
 
         $(".show-summary").text(response.Plot);
     });
+
+    // Code for saving a show to favorite shows
 
 });
