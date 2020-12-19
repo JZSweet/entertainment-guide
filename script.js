@@ -8,6 +8,7 @@ $("#find-movie").on("click", function(event) {
     $(".show-network").empty();
     $(".show-summary").empty();
     $(".show-image").empty();
+    $(".new-checkbox").empty();
     // This line of code will grab the input from the textbox
     var showName = $("#name-input").val().trim();
 
@@ -60,6 +61,79 @@ $("#find-movie").on("click", function(event) {
         $(".show-summary").text(response.Plot);
     });
 
-    // Code for saving a show to favorite shows
+    // Creates a save button
+    var saveBtn = $('<button>');
+    $(saveBtn).addClass('save-button');
+    saveBtn.text("Add " + showName + " to saved shows");
+    $('.buttons-div').append(saveBtn);
+    // Makes button start out hidden
+    $('.save-button').hide();
 
+    // Creates an unsave button
+    var unsaveBtn = $('<button>');
+    $(unsaveBtn).addClass('unsave-button');
+    unsaveBtn.text("Remove " + showName + " from saved shows");
+    $('.buttons-div').append(unsaveBtn);
+    $('.unsave-button').hide();
+
+    // Retrieves items from local storage
+    var storedShows = localStorage.getItem("save-shows");
+    storedShows = JSON.parse(storedShows);
+    console.log(storedShows)
+
+    // Checks to see if the show is already in local storage
+    // If the show is not in local storage, the save button appears
+    // If it is in local storage, the remove button appears
+    if ($.inArray(showName, storedShows) !== -1) {
+        $('.unsave-button').show();
+    } else {
+        $('.save-button').show();
+    }
+
+    // Save button event listener
+    $(".save-button").on("click", function(event) {
+        event.preventDefault();
+        console.log("pressed save")
+
+        // Creates an array to hold saved shows unless an array has already been made
+        var saveShows = JSON.parse(localStorage.getItem("save-shows")) || [];
+        // Pushes the name of the show currently being looked at to the array
+        saveShows.push(showName);
+        console.log(saveShows)
+        // Saves the array to local storage
+        localStorage.setItem("save-shows", JSON.stringify(saveShows));
+        $('.unsave-button').show();
+        $('.save-button').hide();
+    });
+
+    // Unsave button event listener
+    $(".unsave-button").on("click", function(event) {
+        event.preventDefault();
+        console.log("Pressed unsave")
+
+        // Retrieves saved shows from local storage
+        var storedShows = localStorage.getItem("save-shows");
+        storedShows = JSON.parse(storedShows);
+        console.log(storedShows)
+        console.log(storedShows.length)
+
+        var index = storedShows.indexOf(showName);
+        if (index > -1) {
+            storedShows.splice(index, 1);
+            console.log(storedShows)
+        }
+
+        // Saves new array to local storage
+        localStorage.setItem("save-shows", JSON.stringify(storedShows));
+
+        $('.unsave-button').hide();
+        $('.save-button').show();
+    });
 });
+
+// Placeholder for clearing local storage
+$("#clear-shows").on("click", function(){
+    console.log("clicked clear shows")
+    localStorage.clear("save-shows");
+    storedShows = [];
+})
