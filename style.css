@@ -5,3 +5,27 @@
     font-weight: bold;
     font-size: 24px;
 }
+
+/*Search Area*/
+#search-menu {
+    background-color: grey;
+    padding: 25px;
+}
+#search-menu-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+#find-movie {
+    width: 100%;
+}
+
+/*Results Area*/
+article {
+    background-color: honeydew;
+}
+
+

@@ -26,28 +26,34 @@
                     Home
                 </a>
                 <a class="navbar-item" href="./favorites.html">
-                    My Favorite
+                    My Favorites
                 </a>
                 <a class="navbar-item" href="./about.html">
                     About Us
                 </a>
             </div>
-        </div>
-
-        
+        </div>        
     </nav>
-    <section>
 
+    <section>
         <div class="columns">
-            <div class="column">
-                <p>Let's find something to do!</p>
-                <form id="resource-form">
-                    <label for="input">Search for a movie/show</label>
-                    <input type="text" id="name-input"><br>
-                    <input id="find-movie" type="submit" value="Search">
-                </form>
+
+            <div id="search-menu" class="column is-one-fifth">
+                <div class="field"> 
+                    <p id="search-menu-head">Let's find something to do!</p>
+                    <div class="control">
+                      <input id="name-input" class="input is-black" type="text" placeholder="Movie/Show Title">
+                    </div>
+                </div>
+                <div class="control">
+                    <button id="find-movie" class="button is-black">Search</button>
+                </div>
             </div>
+        
+
+
             <div class="column">
+
                 <article>
                     <h id="information">TV Information: <span class="show-name"></span></h><br>
                     <h id="status">Status: <span class="show-status"></span></h><br>
@@ -61,7 +67,10 @@
 
                     <input id="clear-shows" type="submit" value="Remove all shows from saved shows">
                 </article>
+
             </div>
+
+        </div>
 
     </section>
 
