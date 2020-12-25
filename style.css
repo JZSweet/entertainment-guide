@@ -1,5 +1,4 @@
 body {
-    
     background-color: grey;
 }
 
@@ -68,7 +67,21 @@ section {
 }
 
 /*favorites*/
-
+#favorites-title {
+    background-color: black;
+    position: relative;
+    border: darkblue;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+#favorite-show-list {
+    margin: 25px;
+}
 .show-article {
     background-color: black;
     position: relative;
@@ -104,4 +117,16 @@ section {
 
 .show-article img {
     height: 50%;
+}
+
+footer {
+    height: 10%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+#clear-shows {
+    width: 33%;
+    font-weight: bold;
 }
