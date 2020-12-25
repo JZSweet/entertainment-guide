@@ -1,3 +1,8 @@
+body {
+    
+    background-color: grey;
+}
+
 #home-header {
     display: flex;
     justify-content: center;
@@ -5,10 +10,11 @@
     font-weight: bold;
     font-size: 24px;
 }
-
+nav {
+    margin-bottom: 20px;
+}
 /*Search Area*/
 #search-menu {
-    background-color: grey;
     padding: 25px;
 }
 #search-menu-head {
@@ -18,6 +24,7 @@
     font-weight: bold;
     font-size: 24px;
     color: white;
+    text-align: center;
 }
 #find-movie {
     width: 100%;
@@ -25,7 +32,24 @@
 
 /*Results Area*/
 article {
-    background-color: honeydew;
+    padding: 35px;
+}
+#main-display {
+    background-image: url("./assets/images/flat-screen.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;  
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+#main-display span {
+    font-weight: normal;
+    font-size: 20px;
+}
+#display-results {
+    padding-bottom: 100px;
 }
 
-
+section {
+    margin-top: 52px;
+}
