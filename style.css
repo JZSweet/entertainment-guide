@@ -41,10 +41,23 @@ article {
     color: white;
     font-weight: bold;
     font-size: 24px;
+    height: 666px;
+}
+.show-image {
+    text-align: center;
+}
+#show-name {
+    font-weight: bolder;
+    font-size: 24px;
 }
 #main-display span {
     font-weight: normal;
     font-size: 20px;
+}
+#information span {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 10px;
 }
 #display-results {
     padding-bottom: 100px;
