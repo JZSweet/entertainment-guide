@@ -66,3 +66,42 @@ article {
 section {
     margin-top: 52px;
 }
+
+/*favorites*/
+
+.show-article {
+    background-color: black;
+    position: relative;
+    border: darkblue;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+}
+
+.show-article p {
+    position: relative;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.show-article img {
+    position: relative;
+}
+
+.show-article h3 {
+    position: relative;
+}
+
+.show-article .column {
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    height: 100%;
+    position: relative;
+    border-color: white;
+    border-width: 2px;
+}
+
+.show-article img {
+    height: 50%;
+}

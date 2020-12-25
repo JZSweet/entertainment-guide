@@ -20,35 +20,35 @@ if (storedShows !== null) {
         console.log('Omdb: ', omdbResponse);
 
        // grab and append title 
-        var showArticle$ = $('<div>').attr('class', 'show-article');
+        var showArticle$ = $('<div>').attr('class', 'columns show-article');
        
-        var showNameTitle$ = $('<h3>').text(tvMazeFirstResponse.show.name)
+        var showNameTitle$ = $('<p class="column fav-show-title">').text(tvMazeFirstResponse.show.name)
         
         showArticle$.append(showNameTitle$);
 
         // grab and append image
-        var newImg = $("<img>")
+        var newImg = $("<img class='column is-1'>")
         $(newImg).attr("src", omdbResponse.Poster);
         showArticle$.append(newImg);
         
-        var showDay$ = $('<h3>').text("Schedule, Day: " + tvMazeFirstResponse.show.schedule.days)
+        var showDay$ = $('<h3 class="column is-1">').text("Schedule, Day: " + tvMazeFirstResponse.show.schedule.days)
         showArticle$.append(showDay$);
 
-        var showTime$ = $('<h3>').text("Schedule, Time: " + tvMazeFirstResponse.show.schedule.time)
+        var showTime$ = $('<h3 class="column is-1">').text("Schedule, Time: " + tvMazeFirstResponse.show.schedule.time)
         showArticle$.append(showTime$);
 
         var showNetwork = tvMazeFirstResponse.show.network
         
         if (showNetwork === null) {
-            var showStatus$ = $('<h3>').text("This show is not playing on TV.")
+            var showStatus$ = $('<h3 class="column is-1">').text("This show is not playing on TV.")
         } else {
-            var showStatus$ = $('<h3>').text("This show is playing on TV")
-            var showNetwork$ = $('<h3>').text("Network: " + tvMazeFirstResponse.show.network.name)
+            var showStatus$ = $('<h3 class="column is-1">').text("This show is playing on TV")
+            var showNetwork$ = $('<h3 class="column is-1">').text("Network: " + tvMazeFirstResponse.show.network.name)
         }
         showArticle$.append(showNetwork$);
         showArticle$.append(showStatus$);
 
-        var showSummary$ = $('<h3>').text("Summary: " + omdbResponse.Plot);
+        var showSummary$ = $('<h3 class="column">').text("Summary: " + omdbResponse.Plot);
         showArticle$.append(showSummary$);
 
         $("#favorite-show-list").append(showArticle$);
