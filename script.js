@@ -9,6 +9,7 @@ $("#find-movie").on("click", function(event) {
     $(".show-summary").empty();
     $(".show-image").empty();
     $(".new-checkbox").empty();
+    $(".buttons-div").empty();
     // This line of code will grab the input from the textbox
     var showName = $("#name-input").val().trim();
 
