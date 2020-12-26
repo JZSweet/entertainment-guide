@@ -64,7 +64,9 @@ $("#find-movie").on("click", function(event) {
 
     // Creates a save button
     var saveBtn = $('<button>');
+    $(saveBtn).attr('id', 'save-button-index')
     $(saveBtn).addClass('save-button');
+    $(saveBtn).addClass('button is-black')
     saveBtn.text("Add " + showName + " to saved shows");
     $('.buttons-div').append(saveBtn);
     // Makes button start out hidden
@@ -73,6 +75,8 @@ $("#find-movie").on("click", function(event) {
     // Creates an unsave button
     var unsaveBtn = $('<button>');
     $(unsaveBtn).addClass('unsave-button');
+    $(unsaveBtn).attr('id', 'unsave-button-index');
+    $(unsaveBtn).addClass('button is-black');
     unsaveBtn.text("Remove " + showName + " from saved shows");
     $('.buttons-div').append(unsaveBtn);
     $('.unsave-button').hide();
@@ -138,3 +142,32 @@ $("#clear-shows").on("click", function(){
     localStorage.clear("save-shows");
     storedShows = [];
 })
+
+
+/// this is for Bulma NavBar Functionality ///
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+  
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+  
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+  
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
+  
+  });

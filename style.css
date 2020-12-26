@@ -1,0 +1,185 @@
+body {
+    background-color: grey;
+}
+
+#home-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+nav {
+    margin-bottom: 20px;
+}
+/*Search Area*/
+#search-menu {
+    padding: 25px;
+}
+#search-menu-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background: black;
+    margin-bottom: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: darkblue;
+}
+#find-movie {
+    width: 100%;
+}
+
+/*Results Area*/
+article {
+    padding: 35px;
+}
+#main-display {
+    background-image: url("./assets/images/flat-screen.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;  
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    height: 666px;
+}
+.show-image {
+    text-align: center;
+}
+#show-name {
+    font-weight: bolder;
+    font-size: 24px;
+}
+#main-display span {
+    font-weight: normal;
+    font-size: 20px;
+}
+#information span {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+#display-results {
+    padding-bottom: 100px;
+}
+
+section {
+    margin-top: 52px;
+}
+
+#save-button-index {
+    font-weight: bold;
+    width: 60%;
+    margin-bottom: 5px;
+}
+#unsave-button-index {
+    font-weight: bold;
+    font-size: 14px;
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+/*favorites*/
+#favorites-title {
+    background-color: black;
+    position: relative;
+    border: darkblue;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+#favorite-show-list {
+    margin: 25px;
+}
+.show-article {
+    background-color: black;
+    position: relative;
+    border: darkblue;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+}
+
+.show-article p {
+    position: relative;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.show-article img {
+    position: relative;
+}
+
+.show-article h3 {
+    position: relative;
+}
+
+.show-article .column {
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    height: 100%;
+    position: relative;
+    border-color: white;
+    border-width: 2px;
+}
+
+.show-article img {
+    height: 50%;
+}
+
+footer {
+    height: 10%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+#clear-shows {
+    width: 60%;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #main-display {
+        background-image: url("./assets/images/tablet.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 1400px;
+        margin: 20px;
+    }
+    article {
+    margin: 0px;
+    font-size: 20px;
+    height: 1000px;
+    padding: 0px;
+    padding-top: 40px;
+    }
+    .show-summary {
+        font-size: 14px;
+    }
+    #save-button-index {
+        width: 90%;
+        font-size: 14px;
+        margin: 5px;
+    }
+    #unsave-button-index {
+        width: 90%;
+        margin: 5px;
+        font-size: 14px;
+    }
+    #clear-shows {
+        width: 90%;
+        font-size: 14px;
+        margin: 5px;
+    }
+  }

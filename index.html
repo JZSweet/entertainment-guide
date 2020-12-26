@@ -5,72 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 
 <body>
-    <header>Entertainment Guide</header>
-    <nav>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+    
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <div id="home-header" class="navbar-brand">
+            Entertainment Guide
+        </div>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
-
-        <div id="navbar" class="navbar-menu">
+        <div id="navbar-main" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item" href="./index.html">
                     Home
                 </a>
-
                 <a class="navbar-item" href="./favorites.html">
-                    My Favorite
+                    My Favorites
                 </a>
-
                 <a class="navbar-item" href="./about.html">
                     About Us
                 </a>
-
             </div>
-        </div>
+        </div>        
     </nav>
-    <section>
 
-        <div class="columns">
-            <div class="column">
-                <p>Let's find something to do!</p>
-                <form id="resource-form">
-                    <label for="input">Search for a movie/show</label>
-                    <input type="text" id="name-input"><br>
-                    <input id="find-movie" type="submit" value="Search">
-                </form>
+    <section class="columns is-0">
+
+            <div id="search-menu" class="column is-one-fifth">
+                <div class="field"> 
+                    <p id="search-menu-head">Let's find something to do!</p>
+                    <div class="control">
+                      <input id="name-input" class="input is-black" type="text" placeholder="Movie/Show Title">
+                    </div>
+                </div>
+                <div class="control">
+                    <button id="find-movie" class="button is-black">Search</button>
+                </div>
             </div>
-            <div class="column">
+        
+
+            <main id="main-display" class="column">
                 <article>
-                    <h id="information">TV Information: <span class="show-name"></span></h><br>
-                    <h id="status">Status: <span class="show-status"></span></h><br>
-                    <h id="showDay">Schedule Show Day: <span class="show-day"></span></h><br>
-                    <h id="showTime">Schedule Show Time: <span class="show-time"></span></h><br>
-                    <h id="network">Network: <span class="show-network"></span></h><br>
-                    <h id="summary">Summary: <span class="show-summary"></span></h><br>
-                    <div class="show-image"></div><br>
+                    <div class="columns is-variable is-0">
+                        <div class="column is-one-half">
+                            <h id="information">Program Title: <span id="show-name" class="show-name"></span></h><br>
+                            <h id="status">Status: <span class="show-status"></span></h><br>
+                            <h id="showDay">Schedule Show Day: <span class="show-day"></span></h><br>
+                            <h id="showTime">Schedule Show Time: <span class="show-time"></span></h><br>
+                            <h id="network">Network: <span class="show-network"></span></h><br>
+                            <h id="summary">Summary: <span class="show-summary"></span></h><br>
+                            <br>
+                            <div class="buttons-div"></div>                        
+                            <input id="clear-shows" class="button is-black" type="submit" value="Remove all shows from saved shows">
+                        </div>
 
-                    <div class="buttons-div"></div>
+                        <div id="display-results" class="column">
+                            <div class="show-image"></div><br>
+                        </div>
+                    </div>
 
-                    <input id="clear-shows" type="submit" value="Remove all shows from saved shows">
                 </article>
-            </div>
 
+            </main>
     </section>
 
-    <footer>
-        <p1>Contact</p1><br>
-        <p2>Team Member:</p2>
 
-    </footer>
+    <script>
+        //move this to script.js
+        
+      </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
