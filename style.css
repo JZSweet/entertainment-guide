@@ -68,8 +68,10 @@ section {
 
 #save-button-index {
     font-weight: bold;
+    width: 60%;
+    margin-bottom: 5px;
 }
-.unsave-button {
+#unsave-button-index {
     font-weight: bold;
     font-size: 14px;
 }
@@ -135,7 +137,7 @@ footer {
 }
 
 #clear-shows {
-    width: 33%;
+    width: 60%;
     font-weight: bold;
 }
 
