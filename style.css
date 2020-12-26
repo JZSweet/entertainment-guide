@@ -66,6 +66,14 @@ section {
     margin-top: 52px;
 }
 
+#save-button-index {
+    font-weight: bold;
+}
+.unsave-button {
+    font-weight: bold;
+    font-size: 14px;
+}
+
 /*favorites*/
 #favorites-title {
     background-color: black;
@@ -150,8 +158,19 @@ footer {
     .show-summary {
         font-size: 14px;
     }
+    #save-button-index {
+        width: 90%;
+        font-size: 14px;
+        margin: 5px;
+    }
+    #unsave-button-index {
+        width: 90%;
+        margin: 5px;
+        font-size: 14px;
+    }
     #clear-shows {
         width: 90%;
         font-size: 14px;
+        margin: 5px;
     }
   }

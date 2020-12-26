@@ -64,7 +64,9 @@ $("#find-movie").on("click", function(event) {
 
     // Creates a save button
     var saveBtn = $('<button>');
+    $(saveBtn).attr('id', 'save-button-index')
     $(saveBtn).addClass('save-button');
+    $(saveBtn).addClass('button is-black')
     saveBtn.text("Add " + showName + " to saved shows");
     $('.buttons-div').append(saveBtn);
     // Makes button start out hidden
@@ -73,6 +75,8 @@ $("#find-movie").on("click", function(event) {
     // Creates an unsave button
     var unsaveBtn = $('<button>');
     $(unsaveBtn).addClass('unsave-button');
+    $(unsaveBtn).attr('id', 'unsave-button-index');
+    $(unsaveBtn).addClass('button is-black');
     unsaveBtn.text("Remove " + showName + " from saved shows");
     $('.buttons-div').append(unsaveBtn);
     $('.unsave-button').hide();
