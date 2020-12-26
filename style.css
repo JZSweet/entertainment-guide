@@ -24,6 +24,11 @@ nav {
     font-size: 24px;
     color: white;
     text-align: center;
+    background: black;
+    margin-bottom: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: darkblue;
 }
 #find-movie {
     width: 100%;
@@ -74,6 +79,8 @@ section {
 #unsave-button-index {
     font-weight: bold;
     font-size: 14px;
+    width: 60%;
+    margin-bottom: 5px;
 }
 
 /*favorites*/
