@@ -48,7 +48,7 @@ nav {
 
 
 
-#developer-card {
+#content-team-members {
   position: relative;
   padding-top: 15px;
   background-color: rgb(93, 136, 132);
@@ -61,20 +61,23 @@ nav {
   color: black;
   font-family: "Rock Salt", cursive;
   font-size: 20px;
+  text-align: center;
 }
 
-#title-text {
+#member-title {
   color: rgb(34, 33, 33);
   text-align: center;
   
 }
-#textarea {
+#member-text {
   font-size: 15px;
   font-family: "Marcellus", serif;
   padding-top: 30px;
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
+  
 }
 
 #image {
