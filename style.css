@@ -1,7 +1,9 @@
 html, body {
-    margin: 0;
+    content: "";
     height: 100%;
+    clear: both;
     background-color: #305C66 ;
+    overflow: auto; 
 }
 
 section {
