@@ -1,61 +1,95 @@
-body {
-    padding-top: 3.5rem;
-  }
-  
-
-  
-  p.about {
-    color:rgb(28, 28, 29);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-     }
-
-  #home-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-      font-size: 24px;
-  }
-  nav {
-      margin-bottom: 20px;
-  }
-  
-  
-  
-  
-  section {
-      margin-top: 52px;
-  }
-  
-  
-  
-  
-  footer {
-      height: 10%;
-      margin: auto;
-      text-align: center;
-      padding: 5px;
-  }
-  
- 
-  #developer  {
-    
- 
- }
- 
- 
- #developer-each
- {
-
+* body {
+  padding-top: 3.5rem;
+  background-image: linear-gradient(-45deg, rgb(57, 57, 128), rgb(93, 160, 93));
 }
 
+#home-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+nav {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
-  
-  @media only screen and (max-width: 600px) {
-      #main-display {
-          background-image: url("./assets/images/tablet.png");
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          height: 1400px;
-          margin: 20px;
+.developers-about {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  word-wrap: normal;
+}
+
+.developers {
+  position: relative;
+  border-bottom-width: 15px;
+  border-color: rgb(20, 87, 81);
+  border-style: ridge;
+}
+
+#developers-header {
+  font-size: 80px;
+  text-align: center;
+  font-family: "Krona One", sans-serif;
+  background-color: rgb(160, 158, 158);
+  color: black;
+}
+
+#developers-subtitle {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-family: "Permanent Marker", cursive;
+  color: rgb(27, 26, 26);
+}
+
+#developer-each {
+  padding-top: 15px;
+  font-family: "Rock Salt", cursive;
+  color: black;
+}
+
+#developer-card {
+  position: relative;
+  background-color: rgb(93, 136, 132);
+  border-bottom-width: 30px;
+  border-left: 10px;
+  border-right: 10px;
+  border-top: 10px;
+  border-color: rgb(20, 87, 81);
+  border-style: ridge;
+  color: black;
+}
+
+#title-text {
+  color: rgb(34, 33, 33);
+  text-align: center;
+}
+#textarea {
+  font-size: 15px;
+  font-family: "Marcellus", serif;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#image {
+  border-style: solid;
+  border-width: 5pt;
+  border-color: rgb(54, 53, 53);
+}
+
+footer {
+  height: 10%;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  word-wrap: normal;
+}
