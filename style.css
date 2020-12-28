@@ -121,6 +121,14 @@ article img {
 }
 
 /*favorites*/
+.show-article {
+    background-color: #F0CB76;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px #B49581;
+    text-align: center;
+    margin: auto;
+}
 #favorites-title {
     background-color: black;
     position: relative;
@@ -132,12 +140,9 @@ article img {
 }
 #favorite-show-list {
     margin: 25px;
+    height: auto;
 }
-.show-article {
-    background-color: black;
-    position: relative;
-    color: white;
-}
+
 
 .show-article p {
     position: relative;
@@ -156,7 +161,7 @@ article img {
 .show-article .column {
     margin: auto;
     text-align: center;
-    background-color: black;
+    background-color: #F0CB76;
     height: 100%;
     position: relative;
 }
@@ -167,9 +172,9 @@ article img {
 
 footer {
     height: 10%;
-    margin: auto;
     text-align: center;
     padding: 5px;
+    margin: auto;
 }
 
 #clear-shows {
