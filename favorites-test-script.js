@@ -31,7 +31,7 @@ if (storedShows !== null) {
         $(newImg).attr("src", omdbResponse.Poster);
         showArticle$.append(newImg);
         
-        var showDay$ = $('<h3 class="column is-1">').text("Day: " + tvMazeFirstResponse.show.schedule.days)
+        var showDay$ = $('<h3 class="column is-2">').text("Day: " + tvMazeFirstResponse.show.schedule.days)
         showArticle$.append(showDay$);
 
         var showTime$ = $('<h3 class="column is-1">').text("Time: " + tvMazeFirstResponse.show.schedule.time)

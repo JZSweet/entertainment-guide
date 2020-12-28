@@ -122,21 +122,23 @@ article img {
 
 /*favorites*/
 .show-article {
-    background-color: #F0CB76;
+    background-color: #B49581;
+    color: #FCFAF1;
     position: relative;
     margin-bottom: 25px;
-    box-shadow: 5px 5px #B49581;
+    box-shadow: 5px 5px #F0CB76;
     text-align: center;
     margin: auto;
+    word-wrap: break-word;
 }
 #favorites-title {
-    background-color: black;
+    background-color: #F0CB76;
     position: relative;
-    color: #FCFAF1;
+    color:  #305C66;
     margin: auto;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 44px;
 }
 #favorite-show-list {
     margin: 25px;
@@ -161,7 +163,6 @@ article img {
 .show-article .column {
     margin: auto;
     text-align: center;
-    background-color: #F0CB76;
     height: 100%;
     position: relative;
 }
@@ -182,6 +183,13 @@ footer {
     font-weight: bold;
     color: #305C66 ;
     background-color: #F0CB76 ;
+}
+#clear-shows-fav {
+    width: 60%;
+    font-weight: bold;
+    color: #305C66 ;
+    background-color: #F0CB76 ;
+    margin: auto;
 }
 
 
