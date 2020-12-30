@@ -20,7 +20,7 @@ if (storedShows !== null) {
         console.log('Omdb: ', omdbResponse);
 
        // grab and append title 
-        var showArticle$ = $('<div>').attr('class', 'columns show-article');
+        var showArticle$ = $('<div>').attr('class', 'columns mb-5 show-article');
        
         var showNameTitle$ = $('<p class="column fav-show-title">').text(tvMazeFirstResponse.show.name)
         
@@ -31,10 +31,10 @@ if (storedShows !== null) {
         $(newImg).attr("src", omdbResponse.Poster);
         showArticle$.append(newImg);
         
-        var showDay$ = $('<h3 class="column is-1">').text("Schedule, Day: " + tvMazeFirstResponse.show.schedule.days)
+        var showDay$ = $('<h3 class="column is-2">').text("Day: " + tvMazeFirstResponse.show.schedule.days)
         showArticle$.append(showDay$);
 
-        var showTime$ = $('<h3 class="column is-1">').text("Schedule, Time: " + tvMazeFirstResponse.show.schedule.time)
+        var showTime$ = $('<h3 class="column is-1">').text("Time: " + tvMazeFirstResponse.show.schedule.time)
         showArticle$.append(showTime$);
 
         var showNetwork = tvMazeFirstResponse.show.network

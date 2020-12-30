@@ -11,7 +11,7 @@
 
 <body>
     
-    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+    <nav id="nav-bar" class="navbar" role="navigation" aria-label="main navigation">
         <div id="home-header" class="navbar-brand">
             Entertainment Guide
         </div>
@@ -22,7 +22,7 @@
         </a>
         <div id="navbar-main" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="./index.html">
+                <a id="active-nav" class="navbar-item" href="./index.html">
                     Home
                 </a>
                 <a class="navbar-item" href="./favorites.html">
@@ -41,11 +41,11 @@
                 <div class="field"> 
                     <p id="search-menu-head">Let's find something to do!</p>
                     <div class="control">
-                      <input id="name-input" class="input is-black" type="text" placeholder="Movie/Show Title">
+                      <input id="name-input" class="input" type="text" placeholder="Movie/Show Title">
                     </div>
                 </div>
                 <div class="control">
-                    <button id="find-movie" class="button is-black">Search</button>
+                    <button id="find-movie" class="button">Search</button>
                 </div>
             </div>
         
@@ -62,7 +62,7 @@
                             <h id="summary">Summary: <span class="show-summary"></span></h><br>
                             <br>
                             <div class="buttons-div"></div>                        
-                            <input id="clear-shows" class="button is-black" type="submit" value="Remove all shows from saved shows">
+                            <input id="clear-shows" class="button" type="submit" value="Remove all shows from saved shows">
                         </div>
 
                         <div id="display-results" class="column">

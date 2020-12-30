@@ -1,51 +1,75 @@
-body {
-    background-color: grey;
+html, body {
+    content: "";
+    height: 100%;
+    clear: both;
+    background-color: #305C66 ;
+    overflow: auto; 
+}
+
+section {
+    height: 90%;
+    margin: 0;
+    padding: 30px;
 }
 
 #home-header {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 24px;
 }
+
+#nav-bar {
+    background-color: #B49581;
+    color: #FCFAF1;
+    padding-left: 30px;
+}
+
+#active-nav {
+    font-weight: bold;
+}
+
 nav {
     margin-bottom: 20px;
 }
 /*Search Area*/
-#search-menu {
-    padding: 25px;
-}
 #search-menu-head {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 24px;
-    color: white;
     text-align: center;
-    background: black;
-    margin-bottom: 10px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: darkblue;
+    background-color: #F0CB76 ;
+    color: #305C66 ;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px #B49581;
 }
 #find-movie {
     width: 100%;
+    box-shadow: 5px 5px #B49581;
 }
-
+#name-input {
+    box-shadow: 5px 5px #B49581;
+    background-color: FCFAF1;
+}
 /*Results Area*/
 article {
-    padding: 35px;
+    padding: 20px;
 }
 #main-display {
     background-image: url("./assets/images/flat-screen.jpg");
     background-repeat: no-repeat;
-    background-size: contain;  
-    color: white;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: #F0CB76 ;
     font-weight: bold;
     font-size: 24px;
-    height: 666px;
+    height: 100%;
+}
+#main-display span {
+    color: #FCFAF1;
 }
 .show-image {
     text-align: center;
@@ -70,43 +94,57 @@ article {
 section {
     margin-top: 52px;
 }
-
+#find-movie {
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #F0CB76 ;
+    color: #305C66 ;
+}
 #save-button-index {
     font-weight: bold;
     width: 60%;
-    margin-bottom: 5px;
+    margin-bottom: 5px;    
+    background-color: #F0CB76 ;
+    color: #305C66 ;
 }
 #unsave-button-index {
     font-weight: bold;
     font-size: 14px;
     width: 60%;
     margin-bottom: 5px;
+    background-color: #F0CB76 ;
+    color: #305C66 ;
+}
+
+article img {
+    width: 50%;
 }
 
 /*favorites*/
-#favorites-title {
-    background-color: black;
+.show-article {
+    background-color: #B49581;
+    color: #FCFAF1;
     position: relative;
-    border: darkblue;
-    border-width: 3px;
-    border-style: solid;
-    color: white;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px #F0CB76;
+    text-align: center;
+    margin: auto;
+    word-wrap: break-word;
+}
+#favorites-title {
+    background-color: #F0CB76;
+    position: relative;
+    color:  #305C66;
     margin: auto;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 44px;
 }
 #favorite-show-list {
     margin: 25px;
+    height: auto;
 }
-.show-article {
-    background-color: black;
-    position: relative;
-    border: darkblue;
-    border-width: 3px;
-    border-style: solid;
-    color: white;
-}
+
 
 .show-article p {
     position: relative;
@@ -125,11 +163,8 @@ section {
 .show-article .column {
     margin: auto;
     text-align: center;
-    background-color: black;
     height: 100%;
     position: relative;
-    border-color: white;
-    border-width: 2px;
 }
 
 .show-article img {
@@ -138,18 +173,33 @@ section {
 
 footer {
     height: 10%;
-    margin: auto;
     text-align: center;
     padding: 5px;
+    margin: auto;
 }
 
 #clear-shows {
     width: 60%;
     font-weight: bold;
+    color: #305C66 ;
+    background-color: #F0CB76 ;
+}
+#clear-shows-fav {
+    width: 60%;
+    font-weight: bold;
+    color: #305C66 ;
+    background-color: #F0CB76 ;
+    margin: auto;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    body {
+        height: 300%;
+    }
+    section {
+        padding-top: 10px;
+    }
     #main-display {
         background-image: url("./assets/images/tablet.png");
         background-repeat: no-repeat;
@@ -161,8 +211,11 @@ footer {
     margin: 0px;
     font-size: 20px;
     height: 1000px;
-    padding: 0px;
+    padding: 20px;
     padding-top: 40px;
+    }
+    article img {
+        width: 90%;
     }
     .show-summary {
         font-size: 14px;
@@ -181,5 +234,8 @@ footer {
         width: 90%;
         font-size: 14px;
         margin: 5px;
+    }
+    #nav-bar {
+        padding-left: -10px;
     }
   }
