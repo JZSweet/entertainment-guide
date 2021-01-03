@@ -2,7 +2,7 @@ var storedShows = JSON.parse(localStorage.getItem("save-shows")) || [];
 console.log(storedShows)
 console.log(storedShows.length)
 
-$("#clear-shows").on("click", function(){
+$("#clear-shows-fav").on("click", function(){
     console.log("clicked clear shows")
     localStorage.clear("save-shows");
     storedShows = [];
