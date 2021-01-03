@@ -1,6 +1,10 @@
 * body {
-  padding-top: 3.5rem;
-  background-image: linear-gradient(-45deg, rgb(35, 90, 94), rgb(22, 43, 48));
+  content: "";
+  height: 100%;
+  clear: both;
+ 
+  overflow: auto; 
+
 }
 
 #home-header {
@@ -15,19 +19,21 @@
   background-color: #B49581;
     color: #FCFAF1;
     padding-left: 30px;
+    margin-bottom: 20px;
 }
 
 /* Header Section */
 
 #header-title {
+  padding-top: 10px;
   font-size: 80px;
   text-align: center;
   font-family: "Krona One", sans-serif;
-  background-color: rgb(160, 158, 158);
-  color: black;
+  ;
+  color: rgb(0, 0, 0);
   position: relative;
   border-bottom-width: 15px;
-  border-color: rgb(20, 87, 81);
+  border-color:#18140b;
   border-style: ridge;
 }
 
@@ -36,7 +42,7 @@
   padding-bottom: 20px;
   font-size: 30px;
   font-family: "Permanent Marker", cursive;
-  color: rgb(27, 26, 26);
+  color: black;
 }
 
 #header-about {
@@ -53,7 +59,7 @@
 #content-team-members {
   position: relative;
   padding-top: 15px;
-  background-color: rgb(93, 136, 132);
+  background-color: rgb(177, 173, 149);
   border-bottom-width: 30px;
   border-left: 10px;
   border-right: 10px;
