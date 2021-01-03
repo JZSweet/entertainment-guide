@@ -2,7 +2,7 @@
   content: "";
   height: 100%;
   clear: both;
- 
+ background-color:white;
   overflow: auto; 
 
 }
@@ -25,16 +25,14 @@
 /* Header Section */
 
 #header-title {
-  padding-top: 10px;
-  font-size: 80px;
-  text-align: center;
+  padding-top: 30px;
+  font-size: 60px;
+  text-align: left;
   font-family: "Krona One", sans-serif;
   ;
   color: rgb(0, 0, 0);
   position: relative;
-  border-bottom-width: 15px;
-  border-color:#18140b;
-  border-style: ridge;
+
 }
 
 #header-subtitle {
@@ -43,6 +41,7 @@
   font-size: 30px;
   font-family: "Permanent Marker", cursive;
   color: black;
+  text-align:center;
 }
 
 #header-about {
