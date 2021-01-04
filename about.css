@@ -91,13 +91,13 @@
 }
 
 #team-text {
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Marcellus", serif;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 5px;
+  padding-left: 10px;
   padding-right: 5px;
-  text-align: center;
+  text-align:center;
   color: white;
 }
 
