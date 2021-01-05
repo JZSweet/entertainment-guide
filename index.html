@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    </head>
 
-<body>
-    
-    <nav id="nav-bar" class="navbar" role="navigation" aria-label="main navigation">
-        <div id="home-header" class="navbar-brand">
-            Entertainment Guide
-        </div>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-        <div id="navbar-main" class="navbar-menu">
-            <div class="navbar-start">
-                <a id="active-nav" class="navbar-item" href="./index.html">
-                    Home
-                </a>
-                <a class="navbar-item" href="./favorites.html">
-                    My Favorites
-                </a>
-                <a class="navbar-item" href="./about.html">
-                    About Us
-                </a>
+    <body>
+
+        <nav id="nav-bar" class="navbar" role="navigation" aria-label="main navigation">
+            <div id="home-header" class="navbar-brand">
+                Entertainment Guide
             </div>
-        </div>        
-    </nav>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <div id="navbar-main" class="navbar-menu">
+                <div class="navbar-start">
+                    <a id="active-nav" class="navbar-item" href="./index.html">
+                        Home
+                    </a>
+                    <a class="navbar-item" href="./favorites.html">
+                        My Favorites
+                    </a>
+                    <a class="navbar-item" href="./about.html">
+                        About Us
+                    </a>
+                </div>
+            </div>
+        </nav>
 
-    <section class="columns is-0">
+        <section class="columns is-0">
 
             <div id="search-menu" class="column is-one-fifth">
-                <div class="field"> 
+                <div class="field">
                     <p id="search-menu-head">Let's find something to do!</p>
                     <div class="control">
-                      <input id="name-input" class="input" type="text" placeholder="Movie/Show Title">
+                        <input id="name-input" class="input" type="text" placeholder="Movie/Show Title">
                     </div>
                 </div>
                 <div class="control">
                     <button id="find-movie" class="button">Search</button>
                 </div>
             </div>
-        
+
 
             <main id="main-display" class="column">
                 <article>
@@ -61,8 +61,9 @@
                             <h id="network">Network: <span class="show-network"></span></h><br>
                             <h id="summary">Summary: <span class="show-summary"></span></h><br>
                             <br>
-                            <div class="buttons-div"></div>                        
-                            <input id="clear-shows" class="button" type="submit" value="Remove all shows from saved shows">
+                            <div class="buttons-div"></div>
+                            <input id="clear-shows" class="button" type="submit"
+                                value="Remove all shows from saved shows">
                         </div>
 
                         <div id="display-results" class="column">
@@ -73,15 +74,15 @@
                 </article>
 
             </main>
-    </section>
+        </section>
 
 
-    <script>
+        <script>
         //move this to script.js
-        
-      </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./script.js"></script>
-</body>
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
 
 </html>
