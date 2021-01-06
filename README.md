@@ -15,21 +15,22 @@ This application is a entertainment guide to provid movies and TV shows informat
 we used local storage to store and recall previous information, and we added a clear button to remove saved informations as well.
 
 ### Bulma CSS styling
-we used bluma css libraty to style the page. 
+we used bluma css libraty to style the page. Bulma.io CSS framework was used to help organize elements on the page utilizing its pre-built "columns" formatting. Bulma's tools comes with automated screen-size considerations, responsiveness, which made it very simple to build the page with one view in mind and be assured it'd work perfectly on another (mobile vs desktop). All additional CSS required was for simple sizing and other granular considerations.
 
 ## Image show 
 * Search bar
-![alt text](C:\Users\Sweet\Desktop\MyCode\project-1\pic\1.png)
+![alt text](assets\pic\search.png)
 * Home page
-![alt text](C:\Users\Sweet\Desktop\MyCode\project-1\pic\2.png)
+![alt text](assets\pic\home.png)
 * Home page on a smaller screen 
-![alt text](C:\Users\Sweet\Desktop\MyCode\project-1\pic\3.png)
+![alt text](assets\pic\small.png)
 * Nav bar
-![alt text](C:\Users\Sweet\Desktop\MyCode\project-1\pic\4.png)
+![alt text](assets\pic\nav.png)
 * My favorite page
-![alt text](C:\Users\Sweet\Desktop\MyCode\project-1\pic\5.png)
+![alt text](assets\pic\fav.png)
 * About us page
-![alt text]()
+![alt text](assets\pic\us.png)
+
 
 ## Credits
 Aimee Mattson
