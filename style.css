@@ -192,6 +192,8 @@ footer {
   border: gray;
   border-width: 5px;
   border-style: solid;
+  white-space: normal;
+  height: auto;
 }
 #clear-shows-fav {
   width: 60%;
