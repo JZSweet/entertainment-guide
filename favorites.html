@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 
-<body>
-    
-    <nav id="nav-bar" class="navbar" role="navigation" aria-label="main navigation">
-        <div id="home-header" class="navbar-brand">
-            Entertainment Guide
-        </div>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-        <div id="navbar-main" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="./index.html">
-                    Home
-                </a>
-                <a id="active-nav" class="navbar-item" href="./favorites.html">
-                    My Favorites
-                </a>
-                <a class="navbar-item" href="./about.html">
-                    About Us
-                </a>
+        <title>Favorites</title>
+
+    </head>
+
+    <body>
+
+
+        <nav id="nav-bar" class="navbar" role="navigation" aria-label="main navigation">
+            <div id="home-header" class="navbar-brand">
+                Entertainment Guide
             </div>
-        </div>        
-    </nav>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <div id="navbar-main" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./index.html">
+                        Home
+                    </a>
+                    <a id="active-nav" class="navbar-item" href="./favorites.html">
+                        My Favorites
+                    </a>
+                    <a class="navbar-item" href="./about.html">
+                        About Us
+                    </a>
+                </div>
+            </div>
+        </nav>
 
-    <div class="columns is-gapless">
-    <h1 id="favorites-title" class="column"> My TV Show Favorites</h1>
-</div>
-    <section id="favorite-show-list">
-    </section>
+        <div class="columns is-gapless">
+            <h1 id="favorites-title" class="column"> My TV Show Favorites</h1>
+        </div>
+        <section id="favorite-show-list">
+        </section>
 
-    <footer class="columns is-gapless">
-        <input id="clear-shows-fav" class="button" value="Remove all shows from saved shows">
+        <footer class="columns is-gapless">
+            <button id="clear-shows-fav" class="button">Remove all shows from saved shows</button>
 
-   
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./favorites-test-script.js"></script>
-</body>
+
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./favorites-test-script.js"></script>
+    </body>
 
 </html>
