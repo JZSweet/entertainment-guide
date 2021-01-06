@@ -15,10 +15,13 @@
   font-size: 24px;
 }
 .nav-bar {
-  background-color: #b49581;
+  background-color: rgb(76, 138, 133);
   color: #fcfaf1;
   padding-left: 30px;
   margin-bottom: 20px;
+}
+#active-nav {
+  font-weight: bold;
 }
 
 /* Header Section */
@@ -97,7 +100,7 @@
   padding-bottom: 30px;
   padding-left: 10px;
   padding-right: 5px;
-  text-align:center;
+  text-align: center;
   color: white;
 }
 
