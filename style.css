@@ -248,4 +248,7 @@ footer {
   #nav-bar {
     padding-left: -10px;
   }
+  #clear-shows-fav {
+    width: 95%;
+  }
 }
