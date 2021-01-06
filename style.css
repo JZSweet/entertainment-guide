@@ -182,7 +182,9 @@ footer {
     width: 60%;
     font-weight: bold;
     color: #305C66 ;
-    background-color: #F0CB76 ;
+    background-color: #F0CB76;
+    white-space: normal;
+    height: auto;
 }
 #clear-shows-fav {
     width: 60%;
@@ -190,6 +192,8 @@ footer {
     color: #305C66 ;
     background-color: #F0CB76 ;
     margin: auto;
+    white-space: normal;
+    height: auto;
 }
 
 
