@@ -3,33 +3,33 @@
 * URL:https://kytaylor.github.io/project-1/
 
 ## Introduction
-This application is a entertainment guide to provid movies and TV shows information to users. User can serch by name then the appliction will present status, schedule show time, witch network it's on and summary with a poster about it. The application also has a save fuction to help user access to their favorites.
+This application is an entertainment guide to provide movies and TV shows information to users. Users can search by name then the application will present status, schedule showtime, witch network it's on, and summary with a poster about it. The application also has a save function to help users access their favorites.
 
 ## Tools we used
 
-### Two server side APIs:
+### Two server-side APIs:
 * OMDb API provides movies information
 * TVmaze API provides TV shows information
 
 ### Local Storage
-we used local storage to store and recall previous information, and we added a clear button to remove saved informations as well.
+we used local storage to store and recall previous information, and we added a clear button to remove saved information as well.
 
 ### Bulma CSS styling
-we used bluma css libraty to style the page. Bulma.io CSS framework was used to help organize elements on the page utilizing its pre-built "columns" formatting. Bulma's tools comes with automated screen-size considerations, responsiveness, which made it very simple to build the page with one view in mind and be assured it'd work perfectly on another (mobile vs desktop). All additional CSS required was for simple sizing and other granular considerations.
+we used the Bluma CSS library to style the page. Bulma.io CSS framework was used to help organize elements on the page utilizing its pre-built "columns" formatting. Bulma's tools come with automated screen-size considerations, responsiveness, which made it very simple to build the page with one view in mind and be assured it'd work perfectly on another (mobile vs desktop). All additional CSS required was for simple sizing and other granular considerations.
 
 ## Image show 
 * Search bar
-![alt text](assets\pic\search.png)
+![search bar](https://github.com/kytaylor/project-1/blob/main/assets/pic/search.png)
 * Home page
-![alt text](assets\pic\home.png)
+![home page](https://github.com/kytaylor/project-1/blob/main/assets/pic/home.png)
 * Home page on a smaller screen 
-![alt text](assets\pic\small.png)
+![smaller home page](https://github.com/kytaylor/project-1/blob/main/assets/pic/small.png)
 * Nav bar
-![alt text](assets\pic\nav.png)
+![nav bar](https://github.com/kytaylor/project-1/blob/main/assets/pic/nav.png)
 * My favorite page
-![alt text](assets\pic\fav.png)
+![favorite page](https://github.com/kytaylor/project-1/blob/main/assets/pic/fav.png)
 * About us page
-![alt text](assets\pic\us.png)
+![about us](https://github.com/kytaylor/project-1/blob/main/assets/pic/us.png)
 
 
 ## Credits
