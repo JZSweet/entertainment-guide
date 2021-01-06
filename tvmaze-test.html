@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <h1>TV Search</h1>
+
+    <form id="movie-form">
+      <label for="movie-input">Search for a show or movie!</label>
+      <input type="text" id="movie-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="search-movie" type="submit" value="Search">
+    </form>
+
+    <!-- Movies will get dumped Here -->
+    <div id="movies-view"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./tvmaze-test-script.js"></script>
+</body>
+</html>
